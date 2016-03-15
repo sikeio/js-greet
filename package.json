@@ -2,11 +2,13 @@
   "name": "greet",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "bin": {
     "greet": "./bin/greet.js"
   },
   "scripts": {
+    "build": "babel src --out-dir lib",
+    "watch": "babel src --out-dir lib --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
